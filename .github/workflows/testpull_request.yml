@@ -1,10 +1,15 @@
 name: Tests Unitaires
 
 on:
+  push:
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
 
+permissions:
+  contents: read
+  pull-requests: write
+  
 jobs:
   test:
     runs-on: docker
