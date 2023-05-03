@@ -21,3 +21,4 @@ function email() {
     else
         return console.log('email is not valid');
 }
+true
